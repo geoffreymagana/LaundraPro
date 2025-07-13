@@ -17,6 +17,13 @@ const testimonials = [
     avatar: 'JK',
     rating: 5,
   },
+  {
+    name: 'Grace W.',
+    title: 'Happy Client - Kilimani',
+    quote: "Booking a mama fua used to be a gamble. Now I just use the app, pay with M-Pesa, and get the same great service every time. It’s so simple and safe.",
+    avatar: 'GW',
+    rating: 5,
+  },
 ];
 
 export default function Testimonials() {
@@ -28,7 +35,7 @@ export default function Testimonials() {
             What Our <span className="text-secondary">Partners</span> Are Saying
           </h2>
         </div>
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
+        <div className="mt-16 grid gap-8 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name} className="flex flex-col justify-between p-6 shadow-lg">
               <CardContent className="p-0">
