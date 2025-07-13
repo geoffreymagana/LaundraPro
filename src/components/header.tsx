@@ -2,17 +2,29 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import Logo from '@/components/logo';
 import { cn } from '@/lib/utils';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const navLinks = [
   { href: '/#why', label: 'Why Partner With Us' },
   { href: '/#testimonials', label: 'Testimonials' },
   { href: '/about', label: 'About Us' },
 ];
+
+const partnerLinks = [
+    { href: '/#why', label: 'For Laundry Companies' },
+    { href: '/#why', label: 'For Mama Fuas' },
+    { href: '/#find-mama-fua', label: 'For Clients' },
+]
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -46,9 +58,21 @@ export default function Header() {
             <Button variant="ghost" asChild>
               <Link href="/contact">Contact Sales</Link>
             </Button>
-            <Button asChild>
-              <Link href="/#partner">Become a Partner</Link>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button>
+                  Become a Partner
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {partnerLinks.map((link) => (
+                    <DropdownMenuItem key={link.label} asChild>
+                        <Link href={link.href}>{link.label}</Link>
+                    </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
           <Button
             variant="ghost"
@@ -82,9 +106,21 @@ export default function Header() {
                 <Button variant="outline" asChild>
                   <Link href="/contact" onClick={() => setIsOpen(false)}>Contact Sales</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="/#partner" onClick={() => setIsOpen(false)}>Become a Partner</Link>
-                </Button>
+                 <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                        <Button>
+                        Become a Partner
+                        <ChevronDown className="h-4 w-4" />
+                        </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                        {partnerLinks.map((link) => (
+                            <DropdownMenuItem key={link.label} asChild>
+                                <Link href={link.href} onClick={() => setIsOpen(false)}>{link.label}</Link>
+                            </DropdownMenuItem>
+                        ))}
+                    </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </div>
           </div>
