@@ -2,7 +2,7 @@ import Header from '@/components/header';
 import Footer from '@/components/landing/footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check } from 'lucide-react';
+import { Check, Handshake, Search, Smartphone } from 'lucide-react';
 import Link from 'next/link';
 
 const clientBenefits = [
@@ -27,12 +27,30 @@ const ourPromise = [
     { title: "Growth", description: "We help laundry businesses scale without chaos." }
 ];
 
+const howItWorksSteps = [
+    {
+        icon: <Search className="h-10 w-10 text-primary" />,
+        title: "1. Find & Book",
+        description: "Clients find your laundry service through the app and book a vetted mama fua.",
+    },
+    {
+        icon: <Smartphone className="h-10 w-10 text-primary" />,
+        title: "2. Manage & Track",
+        description: "Your company dashboard lights up. Assign jobs, track progress, and manage your team.",
+    },
+    {
+        icon: <Handshake className="h-10 w-10 text-primary" />,
+        title: "3. Pay & Get Paid",
+        description: "Clients pay securely. We process the payment and automate payouts to your workers. Simple.",
+    }
+]
+
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
       <main className="flex-1 container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-4xl mx-auto space-y-16">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-primary">About Us | LaundraPro</h1>
             <p className="mt-4 text-xl text-muted-foreground">Digitizing Local Laundry Workforces. Empowering Communities.</p>
@@ -75,7 +93,7 @@ export default function AboutPage() {
             </Card>
           </div>
 
-          <Card>
+          <Card id="offerings">
             <CardHeader>
                 <CardTitle>💡 What We Do</CardTitle>
             </CardHeader>
@@ -108,6 +126,24 @@ export default function AboutPage() {
                 </div>
             </CardContent>
           </Card>
+
+            <Card id="how-it-works">
+                <CardHeader>
+                    <CardTitle>⚙️ How LaundraPro Works</CardTitle>
+                    <p className="text-muted-foreground pt-2">A simple, powerful, end-to-end solution.</p>
+                </CardHeader>
+                <CardContent className="grid md:grid-cols-3 gap-8">
+                    {howItWorksSteps.map((step) => (
+                        <div key={step.title} className="flex flex-col items-center text-center gap-4">
+                            <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10">
+                                {step.icon}
+                            </div>
+                            <h4 className="font-bold text-xl">{step.title}</h4>
+                            <p className="text-muted-foreground">{step.description}</p>
+                        </div>
+                    ))}
+                </CardContent>
+            </Card>
 
            <Card>
               <CardHeader>
@@ -144,7 +180,7 @@ export default function AboutPage() {
                         <Link href="/contact">Contact Us</Link>
                     </Button>
                      <Button variant="secondary" asChild>
-                        <Link href="/#demo">Book a Demo</Link>
+                        <Link href="/#partner">Become a Partner</Link>
                     </Button>
                  </div>
             </div>
