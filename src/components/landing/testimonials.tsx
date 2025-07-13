@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent } from '@/components/ui/card';
+import { Star } from 'lucide-react';
 
 const testimonials = [
   {
@@ -7,12 +8,14 @@ const testimonials = [
     title: 'Laundry Network Owner - Nairobi',
     quote: 'With LaundraPro, I no longer chase clients or manage cash. My staff are paid fairly, and my business runs itself.',
     avatar: 'SM',
+    rating: 5,
   },
   {
     name: 'John K.',
     title: 'Operations Manager - Mombasa',
     quote: "We expanded to 3 estates and I didn't need to hire extra admin staff — everything is digital now.",
     avatar: 'JK',
+    rating: 5,
   },
 ];
 
@@ -29,6 +32,11 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <Card key={testimonial.name} className="flex flex-col justify-between p-6 shadow-lg">
               <CardContent className="p-0">
+                 <div className="flex mb-4">
+                  {Array.from({ length: testimonial.rating }).map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
                 <blockquote className="text-lg text-foreground">
                   <p>“{testimonial.quote}”</p>
                 </blockquote>
