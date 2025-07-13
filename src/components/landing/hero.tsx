@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container max-w-4xl text-center text-white">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Your Laundry Business, Digitized
+            Your Laundry Business, <span className="text-secondary">Digitized</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
             LaundraPro helps you run your laundry team like a tech company — bookings, payments, performance, all in one dashboard.

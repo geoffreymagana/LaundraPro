@@ -22,7 +22,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            What Partners Are Saying
+            What Our <span className="text-secondary">Partners</span> Are Saying
           </h2>
         </div>
         <div className="mt-16 grid gap-8 lg:grid-cols-2">

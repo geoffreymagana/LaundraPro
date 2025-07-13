@@ -30,8 +30,11 @@ export default function WhyLaundraPro() {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Why Use LaundraPro?
+            Why Use <span className="text-secondary">LaundraPro?</span>
           </h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            A fully managed SaaS platform to support your laundry business — from booking to payout.
+          </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (

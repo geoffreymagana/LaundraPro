@@ -7,7 +7,7 @@ export default function FinalCta() {
       <div className="container mx-auto px-4 py-16 sm:py-24">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-secondary-foreground sm:text-4xl">
-            Ready to Scale Your Laundry Workforce?
+            <span className="text-primary">Ready to Scale</span> Your Laundry Workforce?
           </h2>
           <p className="mt-4 text-lg text-secondary-foreground/80">
             Join other smart companies digitizing the way they manage domestic help — fully localized, fully mobile.

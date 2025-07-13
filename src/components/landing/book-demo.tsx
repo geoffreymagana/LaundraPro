@@ -7,7 +7,7 @@ export default function BookDemo() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Book a Demo
+            Book a <span className="text-secondary">Demo</span>
           </h2>
           <p className="mt-4 text-lg leading-8 text-muted-foreground">
             See how LaundraPro can power your laundry network. A 15-minute walkthrough with our team will show you the full dashboard, booking app, and payment flow.
