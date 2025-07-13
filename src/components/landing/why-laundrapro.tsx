@@ -38,7 +38,7 @@ export default function WhyLaundraPro() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={feature.title} className="text-center shadow-lg">
               <CardHeader>
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                   {feature.icon}
