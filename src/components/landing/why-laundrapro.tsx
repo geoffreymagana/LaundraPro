@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Briefcase, Building, Check, HeartHandshake, User, Users } from "lucide-react"
+import { Building, Check, HeartHandshake, User } from "lucide-react"
 import { Button } from "../ui/button"
 import Link from "next/link"
 import Image from "next/image"
@@ -44,7 +44,7 @@ export default function WhyLaundraPro() {
               <Building className="mr-2 h-5 w-5" /> For Laundry Companies
             </TabsTrigger>
             <TabsTrigger value="workers" className="py-3 text-base">
-              <User className="mr-2 h-5 w-5" /> For Mama Fuas (Workers)
+              <User className="mr-2 h-5 w-5" /> For Mama Fuas
             </TabsTrigger>
             <TabsTrigger value="clients" className="py-3 text-base">
               <HeartHandshake className="mr-2 h-5 w-5" /> For Clients
