@@ -22,7 +22,7 @@ const navLinks = [
 const aboutLinks = [
     { href: '/about', label: 'About Us' },
     { href: '/about#offerings', label: 'Our Offerings' },
-    { href: '/about#how-it-works', label: 'How LaundraPro Works' },
+    { href: '/how-it-works', label: 'How LaundraPro Works' },
     { href: '/press', label: 'Press' },
     { href: '/investors', label: 'Investor Relations' },
     { href: '/blog', label: 'Blog' },
