@@ -9,9 +9,9 @@ import Logo from '@/components/logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/#why', label: 'Why LaundraPro' },
-  { href: '/#features', label: 'Features' },
+  { href: '/#why', label: 'Why Partner With Us' },
   { href: '/#testimonials', label: 'Testimonials' },
+  { href: '/about', label: 'About Us' },
 ];
 
 export default function Header() {
@@ -44,10 +44,10 @@ export default function Header() {
           </div>
           <nav className="hidden md:flex gap-2">
             <Button variant="ghost" asChild>
-              <Link href="/#partner">Join as Partner</Link>
+              <Link href="/contact">Contact Sales</Link>
             </Button>
             <Button asChild>
-              <Link href="/#demo">Book a Demo</Link>
+              <Link href="/#partner">Become a Partner</Link>
             </Button>
           </nav>
           <Button
@@ -80,10 +80,10 @@ export default function Header() {
               </nav>
               <div className="flex flex-col gap-2">
                 <Button variant="outline" asChild>
-                  <Link href="/#partner" onClick={() => setIsOpen(false)}>Join as Partner</Link>
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>Contact Sales</Link>
                 </Button>
                 <Button asChild>
-                  <Link href="/#demo" onClick={() => setIsOpen(false)}>Book a Demo</Link>
+                  <Link href="/#partner" onClick={() => setIsOpen(false)}>Become a Partner</Link>
                 </Button>
               </div>
             </div>

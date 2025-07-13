@@ -11,6 +11,13 @@ const linkGroups = [
       { text: 'Contact Us', href: '/contact' },
     ],
   },
+    {
+    title: 'Partnerships',
+    links: [
+      { text: 'For Laundry Companies', href: '/#why' },
+      { text: 'For Mama Fuas', href: '/#why' },
+    ],
+  },
   {
     title: 'Legal',
     links: [
@@ -38,7 +45,7 @@ export default function Footer() {
             <Logo />
             <p className="mt-4 text-muted-foreground text-sm">Empowering Local Laundry Networks</p>
           </div>
-          <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
             {linkGroups.map((group) => (
               <div key={group.title}>
                 <h3 className="font-semibold text-foreground mb-4">{group.title}</h3>

@@ -17,17 +17,17 @@ export default function Hero() {
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="container max-w-4xl text-center text-white">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Your Laundry Business, <span className="text-secondary">Digitized</span>
+            Clean clothes, dignified work, and business <span className="text-secondary">growth</span>—all in one place.
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-200">
-            LaundraPro helps you run your laundry team like a tech company — bookings, payments, performance, all in one dashboard.
+            LaundraPro connects laundry companies, professional mama fuas, and clients through a seamless digital platform built for Africa.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button size="lg" asChild className="bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-              <Link href="#demo">Book a Demo</Link>
+            <Button size="lg" asChild>
+              <Link href="#why">Partner with Us</Link>
             </Button>
             <Button size="lg" variant="outline" asChild className="border-white text-white bg-white/20 hover:bg-white/30">
-              <Link href="#partner">Join as a Laundry Partner</Link>
+              <Link href="/find">Find a Service</Link>
             </Button>
           </div>
         </div>
