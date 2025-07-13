@@ -134,7 +134,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="grid md:grid-cols-3 gap-8">
                     {howItWorksSteps.map((step) => (
-                        <div key={step.title} className="flex flex-col items-center text-center gap-4">
+                        <div key={step.title} className="flex flex-col items-center text-center gap-4 p-6 rounded-lg bg-muted/30">
                             <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10">
                                 {step.icon}
                             </div>

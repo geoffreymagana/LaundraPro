@@ -9,6 +9,8 @@ const linkGroups = [
       { text: 'About Us', href: '/about' },
       { text: 'Careers', href: '/careers' },
       { text: 'Contact Us', href: '/contact' },
+      { text: 'Blog', href: '/blog' },
+      { text: 'Press', href: '/press' },
     ],
   },
     {
@@ -16,6 +18,13 @@ const linkGroups = [
     links: [
       { text: 'For Laundry Companies', href: '/#why' },
       { text: 'For Mama Fuas', href: '/#why' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { text: 'Help Center', href: '/help' },
+      { text: 'Investor Relations', href: '/investors' },
     ],
   },
   {
@@ -39,13 +48,21 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-white border-t">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-1">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="lg:col-span-3">
             <Logo />
             <p className="mt-4 text-muted-foreground text-sm">Empowering Local Laundry Networks</p>
+             <div className="flex space-x-4 mt-6">
+                {socialLinks.map((social) => (
+                <Link key={social.platform} href={social.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <span className="sr-only">{social.platform}</span>
+                    {social.icon}
+                </Link>
+                ))}
+            </div>
           </div>
-          <div className="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="lg:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-8">
             {linkGroups.map((group) => (
               <div key={group.title}>
                 <h3 className="font-semibold text-foreground mb-4">{group.title}</h3>
@@ -60,20 +77,9 @@ export default function Footer() {
                 </ul>
               </div>
             ))}
-             <div>
-                <h3 className="font-semibold text-foreground mb-4">Connect</h3>
-                 <div className="flex space-x-4">
-                    {socialLinks.map((social) => (
-                    <Link key={social.platform} href={social.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                        <span className="sr-only">{social.platform}</span>
-                        {social.icon}
-                    </Link>
-                    ))}
-                </div>
-              </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+        <div className="mt-16 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} LaundraPro. All rights reserved.</p>
         </div>
       </div>
