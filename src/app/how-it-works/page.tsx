@@ -7,38 +7,38 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const companySteps = [
-    { title: "1. Become a Partner", description: "Sign up and get approved to join the LaundraPro network.", image: "https://placehold.co/350x250.png", imageHint: "handshake deal" },
-    { title: "2. Onboard Your Team", description: "Register your mama fuas and set up their profiles in minutes.", image: "https://placehold.co/350x250.png", imageHint: "team members" },
-    { title: "3. Manage Operations", description: "Use your dashboard to assign jobs, track progress, and manage payroll.", image: "https://placehold.co/350x250.png", imageHint: "dashboard analytics" },
-    { title: "4. Scale Your Business", description: "Grow your client base and increase revenue with our powerful tools.", image: "https://placehold.co/350x250.png", imageHint: "business growth" },
+    { title: "1. Become a Partner", description: "Sign up and get approved to join the LaundraPro network.", image: "https://plus.unsplash.com/premium_vector-1723550781133-390407c3458c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D", imageHint: "handshake deal" },
+    { title: "2. Onboard Your Team", description: "Register your mama fuas and set up their profiles in minutes.", image: "https://plus.unsplash.com/premium_vector-1717082060641-5d649cb834aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbXxlbnwwfDB8MHx8fDA%3D", imageHint: "team members" },
+    { title: "3. Manage Operations", description: "Use your dashboard to assign jobs, track progress, and manage payroll.", image: "https://plus.unsplash.com/premium_vector-1719990020640-4440ecfabd17?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlYW18ZW58MHwwfDB8fHww", imageHint: "dashboard analytics" },
+    { title: "4. Scale Your Business", description: "Grow your client base and increase revenue with our powerful tools.", image: "https://plus.unsplash.com/premium_vector-1682301576358-a5fb0fbf7361?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JvdyUyMGJ1c2luZXNzfGVufDB8MHwwfHx8MA%3D%3D", imageHint: "business growth" },
 ];
 
 const workerSteps = [
-    { title: "1. Join a Partner Company", description: "Connect with a registered laundry company on our platform.", image: "https://placehold.co/350x250.png", imageHint: "group meeting" },
-    { title: "2. Get Job Alerts", description: "Receive real-time notifications for jobs in your area via the app.", image: "https://placehold.co/350x250.png", imageHint: "phone notification" },
-    { title: "3. Deliver Great Service", description: "Accept jobs, communicate with clients, and provide top-quality service.", image: "https://placehold.co/350x250.png", imageHint: "clean laundry" },
-    { title: "4. Get Paid, Guaranteed", description: "Receive your earnings automatically via M-Pesa every two weeks.", image: "https://placehold.co/350x250.png", imageHint: "mobile payment" },
+    { title: "1. Join a Partner Company", description: "Connect with a registered laundry company on our platform.", image: "https://plus.unsplash.com/premium_vector-1682303738810-329941ac420f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2xlYW5pbmclMjBqb2J8ZW58MHwwfDB8fHww", imageHint: "group meeting" },
+    { title: "2. Get Job Alerts", description: "Receive real-time notifications for jobs in your area via the app.", image: "https://plus.unsplash.com/premium_vector-1724226857586-31e8ecc031bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5vdGlmaWNhdGlvbnN8ZW58MHwwfDB8fHww", imageHint: "phone notification" },
+    { title: "3. Deliver Great Service", description: "Accept jobs, communicate with clients, and provide top-quality service.", image: "https://plus.unsplash.com/premium_vector-1736407964864-2dd444f4bb2e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9sZGVkJTIwY2xvdGhlc3xlbnwwfDB8MHx8fDA%3D", imageHint: "clean laundry" },
+    { title: "4. Get Paid, Guaranteed", description: "Receive your earnings automatically via M-Pesa every two weeks.", image: "https://plus.unsplash.com/premium_vector-1729153107677-42b4073d57e9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fHJlY2VpdmUlMjBwYXltZW50fGVufDB8MHwwfHx8MA%3D%3D", imageHint: "mobile payment" },
 ];
 
 const clientSteps = [
-    { title: "1. Find a Service", description: "Open the app and enter your location to see available mama fuas.", image: "https://placehold.co/350x250.png", imageHint: "person phone" },
-    { title: "2. Book & Schedule", description: "Choose a professional, select a service, and schedule a convenient time.", image: "https://placehold.co/350x250.png", imageHint: "calendar schedule" },
-    { title: "3. Pay Securely", description: "Pay with M-Pesa or card directly in the app. No cash needed.", image: "https://placehold.co/350x250.png", imageHint: "secure payment" },
-    { title: "4. Rate Your Experience", description: "Leave feedback to help maintain our high-quality community.", image: "https://placehold.co/350x250.png", imageHint: "review stars" },
+    { title: "1. Find a Service", description: "Open the app and enter your location to see available mama fuas.", image: "https://plus.unsplash.com/premium_vector-1682305659898-9be1eb6480ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmluZCUyMGElMjBzZXJ2aWNlfGVufDB8fDB8fHww", imageHint: "person phone" },
+    { title: "2. Book & Schedule", description: "Choose a professional, select a service, and schedule a convenient time.", image: "https://plus.unsplash.com/premium_vector-1730908686651-cdc9c0804b4b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2NoZWR1bGV8ZW58MHx8MHx8fDA%3D", imageHint: "calendar schedule" },
+    { title: "3. Pay Securely", description: "Pay with M-Pesa or card directly in the app. No cash needed.", image: "https://plus.unsplash.com/premium_vector-1682310705199-33c4971a86ce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHBheSUyMHNlY3VyZWx5fGVufDB8fDB8fHww", imageHint: "secure payment" },
+    { title: "4. Rate Your Experience", description: "Leave feedback to help maintain our high-quality community.", image: "https://plus.unsplash.com/premium_vector-1682310943193-f935a52374df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHJhdGluZ3xlbnwwfHwwfHx8MA%3D%3D", imageHint: "review stars" },
 ];
 
 const downloadCards = [
     {
         title: "Download the Client App",
         description: "Scan to download",
-        qrCode: "https://placehold.co/150x150.png",
+        qrCode: "https://images.unsplash.com/vector-1738163099228-680f08da8e1f?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         qrHint: "qr code",
         link: "#"
     },
     {
         title: "Download the Worker App",
         description: "Scan to download",
-        qrCode: "https://placehold.co/150x150.png",
+        qrCode: "https://plus.unsplash.com/premium_vector-1727358324492-7e92a5d98415?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx8",
         qrHint: "qr code",
         link: "#"
     }
