@@ -1,6 +1,7 @@
 import Header from '@/components/header';
 import Hero from '@/components/landing/hero';
 import ClientBenefits from '@/components/landing/client-benefits';
+import FindMamaFua from '@/components/landing/find-mama-fua';
 import WhyLaundraPro from '@/components/landing/why-laundrapro';
 import PlatformFeatures from '@/components/landing/platform-features';
 import BookDemo from '@/components/landing/book-demo';
@@ -14,12 +15,15 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <ClientBenefits />
-        <WhyLaundraPro />
-        <PlatformFeatures />
-        <BookDemo />
-        <Testimonials />
-        <FinalCta />
+        <div className="container mx-auto px-4">
+          <ClientBenefits />
+          <FindMamaFua />
+          <WhyLaundraPro />
+          <PlatformFeatures />
+          <BookDemo />
+          <Testimonials />
+          <FinalCta />
+        </div>
       </main>
       <Footer />
     </div>
