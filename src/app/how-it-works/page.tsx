@@ -7,24 +7,24 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 const companySteps = [
-    { title: "1. Become a Partner", description: "Sign up and get approved to join the LaundraPro network.", image: "https://placehold.co/350x150.png", imageHint: "handshake deal" },
-    { title: "2. Onboard Your Team", description: "Register your mama fuas and set up their profiles in minutes.", image: "https://placehold.co/350x150.png", imageHint: "team members" },
-    { title: "3. Manage Operations", description: "Use your dashboard to assign jobs, track progress, and manage payroll.", image: "https://placehold.co/350x150.png", imageHint: "dashboard analytics" },
-    { title: "4. Scale Your Business", description: "Grow your client base and increase revenue with our powerful tools.", image: "https://placehold.co/350x150.png", imageHint: "business growth" },
+    { title: "1. Become a Partner", description: "Sign up and get approved to join the LaundraPro network.", image: "https://placehold.co/350x250.png", imageHint: "handshake deal" },
+    { title: "2. Onboard Your Team", description: "Register your mama fuas and set up their profiles in minutes.", image: "https://placehold.co/350x250.png", imageHint: "team members" },
+    { title: "3. Manage Operations", description: "Use your dashboard to assign jobs, track progress, and manage payroll.", image: "https://placehold.co/350x250.png", imageHint: "dashboard analytics" },
+    { title: "4. Scale Your Business", description: "Grow your client base and increase revenue with our powerful tools.", image: "https://placehold.co/350x250.png", imageHint: "business growth" },
 ];
 
 const workerSteps = [
-    { title: "1. Join a Partner Company", description: "Connect with a registered laundry company on our platform.", image: "https://placehold.co/350x150.png", imageHint: "group meeting" },
-    { title: "2. Get Job Alerts", description: "Receive real-time notifications for jobs in your area via the app.", image: "https://placehold.co/350x150.png", imageHint: "phone notification" },
-    { title: "3. Deliver Great Service", description: "Accept jobs, communicate with clients, and provide top-quality service.", image: "https://placehold.co/350x150.png", imageHint: "clean laundry" },
-    { title: "4. Get Paid, Guaranteed", description: "Receive your earnings automatically via M-Pesa every two weeks.", image: "https://placehold.co/350x150.png", imageHint: "mobile payment" },
+    { title: "1. Join a Partner Company", description: "Connect with a registered laundry company on our platform.", image: "https://placehold.co/350x250.png", imageHint: "group meeting" },
+    { title: "2. Get Job Alerts", description: "Receive real-time notifications for jobs in your area via the app.", image: "https://placehold.co/350x250.png", imageHint: "phone notification" },
+    { title: "3. Deliver Great Service", description: "Accept jobs, communicate with clients, and provide top-quality service.", image: "https://placehold.co/350x250.png", imageHint: "clean laundry" },
+    { title: "4. Get Paid, Guaranteed", description: "Receive your earnings automatically via M-Pesa every two weeks.", image: "https://placehold.co/350x250.png", imageHint: "mobile payment" },
 ];
 
 const clientSteps = [
-    { title: "1. Find a Service", description: "Open the app and enter your location to see available mama fuas.", image: "https://placehold.co/350x150.png", imageHint: "person phone" },
-    { title: "2. Book & Schedule", description: "Choose a professional, select a service, and schedule a convenient time.", image: "https://placehold.co/350x150.png", imageHint: "calendar schedule" },
-    { title: "3. Pay Securely", description: "Pay with M-Pesa or card directly in the app. No cash needed.", image: "https://placehold.co/350x150.png", imageHint: "secure payment" },
-    { title: "4. Rate Your Experience", description: "Leave feedback to help maintain our high-quality community.", image: "https://placehold.co/350x150.png", imageHint: "review stars" },
+    { title: "1. Find a Service", description: "Open the app and enter your location to see available mama fuas.", image: "https://placehold.co/350x250.png", imageHint: "person phone" },
+    { title: "2. Book & Schedule", description: "Choose a professional, select a service, and schedule a convenient time.", image: "https://placehold.co/350x250.png", imageHint: "calendar schedule" },
+    { title: "3. Pay Securely", description: "Pay with M-Pesa or card directly in the app. No cash needed.", image: "https://placehold.co/350x250.png", imageHint: "secure payment" },
+    { title: "4. Rate Your Experience", description: "Leave feedback to help maintain our high-quality community.", image: "https://placehold.co/350x250.png", imageHint: "review stars" },
 ];
 
 const downloadCards = [
@@ -47,7 +47,7 @@ const downloadCards = [
 const TimelineStep = ({ step, isLast, imageSide = 'left' }: { step: { title: string, description: string, image: string, imageHint: string }, isLast: boolean, imageSide?: 'left' | 'right' }) => (
   <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
     <div className={cn("relative justify-self-center", imageSide === 'right' && 'md:order-last')}>
-      <Image src={step.image} alt={step.title} width={350} height={150} className="rounded-lg shadow-lg" data-ai-hint={step.imageHint} />
+      <Image src={step.image} alt={step.title} width={350} height={250} className="rounded-lg shadow-lg" data-ai-hint={step.imageHint} />
     </div>
     <div className="relative">
       {!isLast && <div className={cn("hidden md:block absolute top-4 h-full w-px bg-border", imageSide === 'left' ? 'left-[-4rem]' : 'right-[-4rem]')} />}
