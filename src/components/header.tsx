@@ -17,8 +17,16 @@ import {
 const navLinks = [
   { href: '/#why', label: 'Why Partner With Us' },
   { href: '/#testimonials', label: 'Testimonials' },
-  { href: '/about', label: 'About Us' },
 ];
+
+const aboutLinks = [
+    { href: '/about', label: 'About Us' },
+    { href: '/about#offerings', label: 'Our Offerings' },
+    { href: '/about#how-it-works', label: 'How LaundraPro Works' },
+    { href: '/press', label: 'Press' },
+    { href: '/investors', label: 'Investor Relations' },
+    { href: '/blog', label: 'Blog' },
+]
 
 const partnerLinks = [
     { href: '/#why', label: 'For Laundry Companies' },
@@ -36,16 +44,32 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Logo />
           </Link>
-          <nav className="flex items-center gap-6 text-sm">
+          <nav className="flex items-center gap-1 text-sm">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="transition-colors hover:text-foreground/80 text-foreground/60"
-              >
-                {link.label}
-              </Link>
+              <Button key={link.href} variant="ghost" asChild>
+                <Link
+                  href={link.href}
+                  className="transition-colors hover:text-foreground/80 text-foreground/60"
+                >
+                  {link.label}
+                </Link>
+              </Button>
             ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                 <Button variant="ghost" className="transition-colors hover:text-foreground/80 text-foreground/60">
+                  About Us
+                  <ChevronDown className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {aboutLinks.map((link) => (
+                    <DropdownMenuItem key={link.label} asChild>
+                        <Link href={link.href}>{link.label}</Link>
+                    </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -101,6 +125,21 @@ export default function Header() {
                     {link.label}
                   </Link>
                 ))}
+                 <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                        <Button variant="ghost" className="w-full justify-between p-2 font-medium hover:underline">
+                            About Us
+                            <ChevronDown className="h-4 w-4" />
+                        </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                        {aboutLinks.map((link) => (
+                            <DropdownMenuItem key={link.label} asChild>
+                                <Link href={link.href} onClick={() => setIsOpen(false)}>{link.label}</Link>
+                            </DropdownMenuItem>
+                        ))}
+                    </DropdownMenuContent>
+                </DropdownMenu>
               </nav>
               <div className="flex flex-col gap-2">
                 <Button variant="outline" asChild>
