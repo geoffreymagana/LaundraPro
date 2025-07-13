@@ -21,7 +21,7 @@ const blogPosts = [
     date: "November 5, 2023",
     category: "Community",
     excerpt: "How fair wages, digital payments, and a professional identity are transforming lives.",
-    image: "https://images.unsplash.com/photo-1545161296-51262d11f0f3?auto=format&fit=crop&w=800&q=80",
+    image: "https://plus.unsplash.com/premium_photo-1723780950349-0133c9232939?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIzfHx8ZW58MHx8fHx8",
     imageHint: "happy worker",
     link: "#"
   },

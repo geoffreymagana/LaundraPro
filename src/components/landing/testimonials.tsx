@@ -9,6 +9,7 @@ const testimonials = [
     quote: 'With LaundraPro, I no longer chase clients or manage cash. My staff are paid fairly, and my business runs itself.',
     avatar: 'SM',
     rating: 5,
+    image: 'https://plus.unsplash.com/premium_vector-1721131162476-9dcc47328755?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     name: 'John K.',
@@ -16,6 +17,7 @@ const testimonials = [
     quote: "We expanded to 3 estates and I didn't need to hire extra admin staff — everything is digital now.",
     avatar: 'JK',
     rating: 5,
+    image: 'https://plus.unsplash.com/premium_vector-1721131162649-5dad38ff8bb6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D'
   },
   {
     name: 'Grace W.',
@@ -23,6 +25,7 @@ const testimonials = [
     quote: "Booking a mama fua used to be a gamble. Now I just use the app, pay with M-Pesa, and get the same great service every time. It’s so simple and safe.",
     avatar: 'GW',
     rating: 5,
+    image: 'https://plus.unsplash.com/premium_vector-1721131162376-d379c6614b89?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wyfHx8ZW58MHx8fHx8'
   },
 ];
 
@@ -51,7 +54,7 @@ export default function Testimonials() {
               <footer className="mt-6">
                 <div className="flex items-center gap-4">
                   <Avatar>
-                    <AvatarImage src={`https://placehold.co/40x40.png`} alt={testimonial.name} data-ai-hint="person portrait" />
+                    <AvatarImage src={testimonial.image} alt={testimonial.name} data-ai-hint="person portrait" />
                     <AvatarFallback>{testimonial.avatar}</AvatarFallback>
                   </Avatar>
                   <div>

@@ -74,7 +74,7 @@ export default function WhyLaundraPro() {
                         </CardContent>
                     </div>
                      <div className="relative h-64 md:h-full min-h-[300px]">
-                        <Image src="https://images.unsplash.com/photo-1582735689369-4d3491932342?auto=format&fit=crop&w=800&q=80" alt="Business dashboard" layout="fill" objectFit="cover" data-ai-hint="dashboard business"/>
+                        <Image src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Business dashboard" layout="fill" objectFit="cover" data-ai-hint="dashboard business"/>
                     </div>
                 </div>
             </Card>
@@ -103,7 +103,7 @@ export default function WhyLaundraPro() {
                         </CardContent>
                     </div>
                      <div className="relative h-64 md:h-full min-h-[300px]">
-                        <Image src="https://images.unsplash.com/photo-1545161296-51262d11f0f3?auto=format&fit=crop&w=800&q=80" alt="Happy worker" layout="fill" objectFit="cover" data-ai-hint="happy worker"/>
+                        <Image src="https://plus.unsplash.com/premium_photo-1723780950349-0133c9232939?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIzfHx8ZW58MHx8fHx8" alt="Happy worker" layout="fill" objectFit="cover" data-ai-hint="happy worker"/>
                     </div>
                 </div>
             </Card>
@@ -132,7 +132,7 @@ export default function WhyLaundraPro() {
                         </CardContent>
                     </div>
                     <div className="relative h-64 md:h-full min-h-[300px]">
-                        <Image src="https://images.unsplash.com/photo-1628191079532-f2b7f3b5e5a4?auto=format&fit=crop&w=800&q=80" alt="Client using a phone" layout="fill" objectFit="cover" data-ai-hint="person phone"/>
+                        <Image src="https://images.unsplash.com/photo-1587573578335-9672da4d0292?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8" alt="Client using a phone" layout="fill" objectFit="cover" data-ai-hint="person phone"/>
                     </div>
                 </div>
             </Card>
