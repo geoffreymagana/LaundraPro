@@ -4,6 +4,7 @@ import FindMamaFua from '@/components/landing/find-mama-fua';
 import WhyLaundraPro from '@/components/landing/why-laundrapro';
 import PartnerWithUs from '@/components/landing/partner-with-us';
 import Testimonials from '@/components/landing/testimonials';
+import Faq from '@/components/landing/faq';
 import FinalCta from '@/components/landing/final-cta';
 import Footer from '@/components/landing/footer';
 
@@ -18,6 +19,7 @@ export default function Home() {
           <FindMamaFua />
           <PartnerWithUs />
           <Testimonials />
+          <Faq />
           <FinalCta />
         </div>
       </main>
