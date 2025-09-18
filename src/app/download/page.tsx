@@ -5,9 +5,11 @@ import { useState } from 'react';
 import Header from '@/components/header';
 import Footer from '@/components/landing/footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Smartphone, Star, Hash, Construction } from 'lucide-react';
+import { Smartphone, Star, Hash, Construction, Building, ArrowRight } from 'lucide-react';
 import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter } from '@/components/ui/alert-dialog';
 import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function DownloadPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,9 +20,9 @@ export default function DownloadPage() {
       <main className="flex-1 container mx-auto px-4 py-16 sm:py-24">
         <div className="max-w-4xl mx-auto space-y-16">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-primary">Download LaundraPro</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-primary">Get LaundraPro</h1>
             <p className="mt-4 text-xl text-muted-foreground">
-              Get started with our dedicated apps for clients and laundry professionals. Coming soon to your favorite app store.
+              Dedicated apps for clients and professionals, a management dashboard for businesses, and USSD access for everyone.
             </p>
           </div>
 
@@ -74,6 +76,31 @@ export default function DownloadPage() {
                 </CardContent>
             </Card>
           </div>
+
+          <Card className="shadow-lg">
+             <CardHeader>
+                <div className="flex items-center gap-4">
+                    <div className="p-3 bg-purple-600/10 rounded-lg">
+                        <Building className="h-8 w-8 text-purple-600"/>
+                    </div>
+                    <div>
+                        <CardTitle>For Laundry Companies</CardTitle>
+                        <CardDescription>Manage your team and scale your business</CardDescription>
+                    </div>
+                </div>
+            </CardHeader>
+            <CardContent>
+                <p className="text-muted-foreground mb-4">
+                    Get access to the LaundraPro dashboard to manage your workers, track jobs in real-time, and automate payments. Our sales team will help you get set up.
+                </p>
+                <Button asChild>
+                  <Link href="/contact">
+                    Contact Sales for a Demo
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+            </CardContent>
+          </Card>
 
           <Card className="bg-muted/50">
              <CardHeader>
