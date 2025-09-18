@@ -8,6 +8,8 @@ import { Label } from '@/components/ui/label';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Faq from '@/components/landing/faq';
 
+const RequiredIndicator = () => <span className="text-red-500">*</span>;
+
 export default function ContactPage() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -30,25 +32,29 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                     <form className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                        <Label htmlFor="name">Name</Label>
-                        <Input id="name" placeholder="Your Name" />
-                        </div>
-                        <div className="space-y-2">
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="your@email.com" />
-                        </div>
-                    </div>
-                    <div className="space-y-2">
-                        <Label htmlFor="subject">Subject</Label>
-                        <Input id="subject" placeholder="Subject" />
-                    </div>
-                    <div className="space-y-2">
-                        <Label htmlFor="message">Message</Label>
-                        <Textarea id="message" placeholder="Your message..." />
-                    </div>
-                    <Button type="submit">Send Message</Button>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div className="space-y-2">
+                            <Label htmlFor="name">Name <RequiredIndicator /></Label>
+                            <Input id="name" placeholder="Your Name" />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="email">Email <RequiredIndicator /></Label>
+                            <Input id="email" type="email" placeholder="your@email.com" />
+                          </div>
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="company">Company Name</Label>
+                        <Input id="company" placeholder="Your Company Name" />
+                      </div>
+                      <div className="space-y-2">
+                          <Label htmlFor="subject">Subject <RequiredIndicator /></Label>
+                          <Input id="subject" placeholder="Subject" />
+                      </div>
+                      <div className="space-y-2">
+                          <Label htmlFor="message">Message <RequiredIndicator /></Label>
+                          <Textarea id="message" placeholder="Your message..." />
+                      </div>
+                      <Button type="submit">Send Message</Button>
                     </form>
                 </CardContent>
                 </Card>
