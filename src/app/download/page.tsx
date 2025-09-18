@@ -105,7 +105,7 @@ export default function DownloadPage() {
                     <div className="p-3 bg-yellow-400/20 rounded-full mb-2">
                         <Construction className="h-8 w-8 text-yellow-500" />
                     </div>
-                    <AlertDialogTitle>🚀 Coming Soon!</AlertDialogTitle>
+                    <AlertDialogTitle>Coming Soon!</AlertDialogTitle>
                     <AlertDialogDescription>
                         Our mobile apps are currently in development and will be available on the App Store and Google Play shortly. Thank you for your interest!
                     </AlertDialogDescription>
